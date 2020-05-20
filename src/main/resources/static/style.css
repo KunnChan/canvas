@@ -1,0 +1,44 @@
+
+#canvas {
+  background: lightblue;
+  border-radius: 5px;
+}
+
+.btnScissor {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.btnScissor:before {
+  content: url(/svgs/scissor.svg);
+  width: 30px;
+  float: left;
+}
+
+.btnGlue {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.btnGlue:before {
+  content: url(/svgs/glue.svg);
+  width: 30px;
+  float: left;
+}
+
+.btnEraser {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.btnEraser:before {
+  content: url(/svgs/eraser.svg);
+  width: 30px;
+  float: left;
+}

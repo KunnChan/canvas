@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+<body class="hold-transition fixed">
+
+<div class="container">
+    <div class="alert alert-info" role="alert">
+        <h4 class="alert-heading">DBS Html5 Canvas Challenge</h4>
+    </div>
+    <div class="mb-3">
+        <button type="button" id="btnCricle" class="btn btn-outline-primary btn-sm">Draw Circle</button>
+        <button type="button" id="btnRectangle" class="btn btn-outline-secondary btn-sm">Draw Rectangle</button>
+        <button type="button" id="btnTriangle" class="btn btn-outline-success btn-sm">Draw Trigangle</button>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <canvas id="canvas" width="800" height="600"></canvas>
+        </div>
+        <div class="col-2">
+            <div id="toolbar">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/script.js" th:src="@{/script.js}"></script>
+</body>
+</html>
